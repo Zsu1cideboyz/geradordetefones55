@@ -1,0 +1,11 @@
+from random import randint
+from time import sleep
+input('INICIAR?')
+while True:
+	numeros = '+55 (11) 9'
+	for c in range(0, 8):
+		numeros += str(randint(1, 9))
+		if c == 3:
+			numeros += '-'
+	print(f'\033[1;3{randint(1, 7)}mTelefone gerado: {numeros}\n by: JvSanchesAndrade\033[m')
+	sleep(0.1)
